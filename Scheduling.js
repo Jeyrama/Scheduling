@@ -37,3 +37,14 @@ function SJF(jobs, index){
 }
 
 // or
+
+function SJF(jobs, index){
+  return jobs.filter(function(job, i) {
+    if(jobs[i] === jobs[index] && i > index) {
+       return false;
+     }
+     return job <= jobs[index];
+   }).reduce(function(prev, curr) {
+     return prev + curr;
+   })
+}

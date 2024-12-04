@@ -28,3 +28,6 @@ Here's an example:
 so:
   SJF([3,10,20,1,2], 0) == 6
 */
+
+
+// Solution

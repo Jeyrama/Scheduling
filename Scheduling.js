@@ -35,3 +35,5 @@ so:
 function SJF(jobs, index){
   return jobs.reduce((a,b,i)=>a+(b<jobs[index]||(b==jobs[index]&&i<=index) ? b:0),0);
 }
+
+// or
